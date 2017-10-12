@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/favicon.png">
+    <title>Cliq - A recruiting tool for contract and freelance recruiters</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Menu CSS -->
+    <link href="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
+    <!-- animation CSS -->
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- color CSS -->
+    <link href="css/colors/blue-dark.css" id="theme" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+    <!-- dropdown CSS -->
+    <style>
+    .dropbtn {
+        background-color: white;
+        color: black;
+        padding: 14.5px;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .dropbtn:hover, .dropbtn:focus {
+        background-color: #f1f1f1;
+    }
+
+    .dropdown {
+        float: right;
+        position: relative;
+        display: inline-block;
+        
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        right: 0;
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown a:hover {background-color: #F0F0F0}
+    .show {display:block;}
+    .profile-image, .img-circle {padding-right: 7px}
+    .dropbtn {padding-right: 20px}
+    </style>
+    <!-- end dropdown CSS -->
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top m-b-0">
+            <div class="navbar-header"> <a class="navbar-toggle hidden-sm hidden-md hidden-lg " href="javascript:void(0)" data-toggle="collapse" data-target=".navbar-collapse"><i class="fa fa-bars"></i></a>
+                <div class="top-left-part"><a class="logo" href="index.html"><b><img src="../plugins/images/cliq_logo.png" alt="home" /></b><span class="hidden-xs"></a></div>
+                <ul class="nav navbar-top-links navbar-left m-l-20 hidden-xs">
+                    <li>
+                        <form role="search" class="app-search hidden-xs">
+                            <input type="text" placeholder="Search" class="form-control"> <a href=""><i class="fa fa-search"></i></a>
+                        </form>
+                    </li>
+                </ul>
+                <ul class="nav navbar-top-links navbar-right pull-right">
+                  <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn"><img src="http://placehold.it/30x30" class="profile-image img-circle">Ben<b class="caret"></b></a></button>
+                      <div id="myDropdown" class="dropdown-content">
+                        <a href="../html/settings_manage_social_accounts.html">Settings</a>
+                        <a href="#about">Sign out</a>
+                      </div>
+                  </div>
+                </ul>
+            </div>
+            <!-- /.navbar-header -->
+            <!-- /.navbar-top-links -->
+            <!-- /.navbar-static-side -->
+        </nav>
+        <!-- Left navbar-header -->
+        <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav navbar-collapse slimscrollsidebar">
+                <ul class="nav" id="side-menu">
+                    <li style="padding: 10px 0 0;">
+                        <a href="index.html" class="waves-effect"><i class="fa fa-tachometer fa-fw" aria-hidden="true"></i><span class="hide-menu">Dashboard</span></a>
+                    </li>
+                    <li>
+                        <a href="contacts.html" class="waves-effect"><i class="fa fa-user fa-fw" aria-hidden="true"></i><span class="hide-menu">Contacts</span></a>
+                    </li>
+                    <li>
+                        <a href="companies.html" class="waves-effect"><i class="fa fa-building fa-fw" aria-hidden="true"></i><span class="hide-menu">Companies</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Left navbar-header end -->
+        <!-- Page Content -->
+        <div id="page-wrapper">
+            <div class="container-fluid">
+               <div class="row bg-title">
+             </div>
+                <!-- /setting options -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div style="text-align: center; padding-bottom: 20px;">
+                            <a class="button-settings-select" href="../html/settings_manage_social_accounts.html"></i>Social Accounts</a>
+                            <a class="button-settings" href="../html/settings_data_migration.html"></i>Data Migration</a>
+                            <a class="button-settings" href="../html/settings_downloads.html"></i>Downloads</a>
+                            <a class="button-settings" href="../html/settings_help.html"></i>Help Center</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /#setting options -->
+                <!-- /row -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="white-box">
+                            <h3 class="box-title">Manage Social Accounts</h3>
+                            <br>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td><i class="fa fa-check" aria-hidden="true" style="color: #00CFA8; padding-right: 20px;"></i><a href="javascript:void(0)"><img src="../plugins/images/linkedin_logo_21px-TM.png" alt="img"></a></td>
+                                            <td style="font-size: 14px; color: #4ea2be;">Disconnect</td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fa fa-check" aria-hidden="true" style="color: #efefef; padding-right: 20px"></i><a href="javascript:void(0)"><img src="../plugins/images/googleplus_logo.svg.png" alt="img";"></a></td>
+                                            <td><a class="button-connect" href="#"></i>Connect</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fa fa-check" aria-hidden="true" style="color: #efefef; padding-right: 20px;"></i><a href="javascript:void(0)"><img src="../plugins/images/facebook_logo.png" alt="img";"></a></td>
+                                            <td><a class="button-connect" href="#"></i>Connect</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fa fa-check" aria-hidden="true" style="color: #00CFA8; padding-right: 20px;"></i><a href="javascript:void(0)"><img src="../plugins/images/twitter_logo.png" alt="img";"></a></td>
+                                            <td style="font-size: 14px; color: #4ea2be;">Disconnect</td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fa fa-check" aria-hidden="true" style="color: #00CFA8; padding-right: 15px;"></i><a href="javascript:void(0)"><img src="../plugins/images/github_logo.png" alt="img";"></a></td>
+                                            <td style="font-size: 14px; color: #4ea2be;">Disconnect</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+        <!-- /#page-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <!-- jQuery -->
+    <script src="../plugins/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Menu Plugin JavaScript -->
+    <script src="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+    <!--slimscroll JavaScript -->
+    <script src="js/jquery.slimscroll.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.min.js"></script>
+        <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+</body>
+
+</html>
