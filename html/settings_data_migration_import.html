@@ -141,11 +141,29 @@
                         <div class="white-box">
                             <h3 class="box-title">Data Migration</h3>
                                 <div style="text-align: center;">
-                                    <a class="button" href="../html/settings_data_migration_import.html">Import</a>
+                                    <a class="button-select" href="../html/settings_data_migration_import.html">Import</a>
                                     <a class="button" href="../html/settings_data_migration_export.html">Export</a>
                                 </div>
                                 <br>
+                                <div style="padding-left: 30px;">
+                                    <p>I want to import a list of...</p>
+                                    <form action="/action_page.php">
+                                      <input type="radio" name="gender" id="male" value="male">
+                                      <label for="male">Contacts</label>
+                                      <br>
+                                      <input type="radio" name="gender" id="female" value="female">
+                                      <label for="female">Companies</label>
+                                    </form>
+                                    <br>
+                                    <p>Select a file to upload<p>
+                                    <p><a class="button-chrome" href="C:\Users\%username%\Desktop" target="_blank" style="margin-right: 15px;">Choose File</a>No file chosen</p>
+                                    <p>(.csv or .xls only)</p>
+                                </div>
+                                <footer style="text-align: center;">
+                                    <br>
+                                    <a class="import-btn" href="../html/settings_data_migration_import_2.html">Next<i class="fa fa-long-arrow-right" aria-hidden="true" style="color: #00CFA5; margin-left: 10px;"></i></a>
 
+                                </footer>
                         </div>
                     </div>
                 </div>

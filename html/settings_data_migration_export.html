@@ -136,16 +136,28 @@
                 </div>
                 <!-- /#setting options -->
                 <!-- /row -->
+<!-- /row -->
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="white-box">
                             <h3 class="box-title">Data Migration</h3>
                                 <div style="text-align: center;">
                                     <a class="button" href="../html/settings_data_migration_import.html">Import</a>
-                                    <a class="button" href="../html/settings_data_migration_export.html">Export</a>
+                                    <a class="button-select" href="../html/settings_data_migration_export.html">Export</a>
                                 </div>
                                 <br>
-
+                                <div style="padding-left: 30px;">
+                                    <p>I want to export a list of...</p>
+                                    <form action="/action_page.php">
+                                      <input type="radio" name="gender" id="male" value="male">
+                                      <label for="male">Contacts</label>
+                                      <br>
+                                      <input type="radio" name="gender" id="female" value="female">
+                                      <label for="female">Companies</label>
+                                    </form>
+                                    <br>
+                                    <a class="button-chrome" href="C:\Users\%username%\Desktop" target="_blank" style="margin-right: 15px;">Choose File</a>
+                                </div>
                         </div>
                     </div>
                 </div>

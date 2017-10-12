@@ -1186,6 +1186,32 @@ input[type=submit]:hover {
 }
 /* End Email Form */
 
+/* Begin Import Form */
+.import-btn {
+    background-color: white;
+    border: 1px solid #323232;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 250px;
+}
+
+.import-btn-submit {
+    background-color: #4ea2be;
+    border: 1px solid #4ea2be;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 250px;
+}
 /*!
  
 
